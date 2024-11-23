@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue</title>
+    <style>
+        /* Internal CSS for styling the page and image hover effect */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: blue;
+            flex-direction: column;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        /* Default styles for the image */
+        .hover-image {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and scale */
+            margin-bottom: 10px; /* Space between images */
+        }
+
+        /* Hover effect: changes opacity and slightly scales up the image */
+        .hover-image:hover {
+            opacity: 0.7; /* Make the image slightly transparent */
+            transform: scale(1.1); /* Scale the image up when hovered */
+        }
+
+        /* Styling for the figure and caption */
+        figure {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <!-- Image with labels -->
+        <figure>
+            <img src="Blue house.jpg" alt="House Image" class="hover-image">
+            <figcaption>HOUSE</figcaption>
+        </figure>
+
+        <figure>
+            <img src="blue car.jpg" alt="Car Image" class="hover-image">
+            <figcaption>CAR</figcaption>
+        </figure>
+
+        <figure>
+            <img src="Blue polo.jpg" alt="Polo Image" class="hover-image">
+            <figcaption>POLO</figcaption>
+        </figure>
+
+        <figure>
+            <img src="Blue bigbike.jpg" alt="Big Bike Image" class="hover-image">
+            <figcaption>BIG BIKE</figcaption>
+        </figure>
+
+        <p style="color: white;">Color Blue</p>
+    </div>
+
+</body>
+</html>
